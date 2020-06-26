@@ -1,3 +1,13 @@
-<h1>Songs#show</h1>
+<h2>Title: <%= @song.title %></h2>
+<h3>Artist: <%= link_to @song.artist_name, artist_path(@song.artist.id) %> </h3>
+<h4>Notes:  </h4>
+    <ul> 
+        <% @song.notes.each do |note| %>
+            <li> <%= note.content %> </li>
+        <% end %>
+    </ul>
 
-Title: <%= @song.title %>
+<%= link_to "View All Songs", songs_path %>
+    
+
+
