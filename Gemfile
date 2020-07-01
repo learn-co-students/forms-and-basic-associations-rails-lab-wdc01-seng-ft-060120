@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-
+gem 'faker'
+gem 'execjs'
+gem 'therubyracer'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
 # Use sqlite3 as the database for Active Record
